@@ -27,6 +27,23 @@ will turn into:
 <li><p>Magic</p></li>
 </ul>
 
+It’s important to note that the actual numbers you use to mark the list have no effect on the HTML output Markdown produces. The HTML Markdown produces from the above list is:
+
+<ol>
+<li>Bird</li>
+<li>McHale</li>
+<li>Parish</li>
+</ol>
+If you instead wrote the list in Markdown like this:
+
+1.  Bird
+1.  McHale
+1.  Parish
+or even:
+
+3. Bird
+1. McHale
+8. Parish
 
 https://daringfireball.net/projects/markdown/syntax
 I vim all day
