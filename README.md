@@ -57,9 +57,26 @@ Markdown will generate:
 <pre><code>This is a code block.
 </code></pre>`
 
+One level of indentation — 4 spaces or 1 tab — is removed from each line of the code block. For example, this:
+
+Here is an example of AppleScript:
+
+    tell application "Foo"
+        beep
+    end tell
+will turn into:
+
+<p>Here is an example of AppleScript:</p>
+
+<pre><code>tell application "Foo"
+    beep
+end tell
+</code></pre>
+
+
 https://daringfireball.net/projects/markdown/syntax
 I vim all day
 press i to insert 
 press escape to stop insert
 then to get out of this, hit escape then colon :wq
-hi
+ihi
