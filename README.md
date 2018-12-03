@@ -7,6 +7,25 @@
 > Here's some example code:
 > h
 >     return shell_exec("echo $input | $markdown_script");
+*   Bird
+*   Magic
+will turn into:
+
+<ul>
+<li>Bird</li>
+<li>Magic</li>
+</ul>
+But this:
+
+*   Bird
+
+*   Magic
+will turn into:
+
+<ul>
+<li><p>Bird</p></li>
+<li><p>Magic</p></li>
+</ul>
 
 
 https://daringfireball.net/projects/markdown/syntax
