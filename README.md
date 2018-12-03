@@ -45,6 +45,18 @@ or even:
 1. McHale
 8. Parish
 
+To produce a code block in Markdown, simply indent every line of the block by at least 4 spaces or 1 tab. For example, given this input:
+
+This is a normal paragraph:
+
+    This is a code block.
+Markdown will generate:
+
+<p>This is a normal paragraph:</p>
+
+<pre><code>This is a code block.
+</code></pre>`
+
 https://daringfireball.net/projects/markdown/syntax
 I vim all day
 press i to insert 
