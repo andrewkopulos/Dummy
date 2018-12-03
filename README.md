@@ -81,6 +81,12 @@ And then define the link:
 
 [Google]: http://google.com/
 
+Because link names may contain spaces, this shortcut even works for multiple words in the link text:
+
+Visit [Daring Fireball][] for more information.
+And then define the link:
+
+[Daring Fireball]: http://daringfireball.net/
 
 https://daringfireball.net/projects/markdown/syntax
 I vim all day
