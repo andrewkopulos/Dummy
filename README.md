@@ -74,6 +74,14 @@ end tell
 </code></pre>
 
 
+The implicit link name shortcut allows you to omit the name of the link, in which case the link text itself is used as the name. Just use an empty set of square brackets — e.g., to link the word “Google” to the google.com web site, you could simply write:
+
+[Google][]
+And then define the link:
+
+[Google]: http://google.com/
+
+
 https://daringfireball.net/projects/markdown/syntax
 I vim all day
 press i to insert 
