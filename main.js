@@ -90,23 +90,35 @@ function Frog() {
         ellipse(x - 20, y + 30, 10, 10);
 
         //eyeRight
-        fill('#FF0000');
-        ellipse(x + 60, y - 26, 95, 104);
+        if(mouseIsPressed){
+            fill('#00FFFF');
+            ellipse(x + 60, y - 26, 95, 104);
+        } else{
+            fill('#FF0000');
+            ellipse(x + 60, y - 26, 95, 104);
+        }
 
         //pupilRight
         fill('#000000');
         ellipse(x + 42, y - 26, 50, 50);
 
         //eyeLeft
-        fill('#FF0000');
-        ellipse(x - 60, y - 26, 95, 104);
+        if(mouseIsPressed){
+            fill('#00FFFF');
+            ellipse(x - 60, y - 26, 95, 104);
+        } else{
+            fill('#FF0000');
+            ellipse(x - 60, y - 26, 95, 104);
+        }
 
         //pupilRight
         fill('#000000');
         ellipse(x - 42, y - 26, 50, 50);
 
         //tongue
+        if(mouseIsPressed){
         fill('#EE3E36');
         arc(x, y + 80, 50, 100, 0, PI + QUARTER_PI, CHORD);
+        }
     };
 }
