@@ -6,6 +6,7 @@ var a = [1, 2, 3];
 
 function setup() {
     createCanvas(740, 480);
+    textSize(32);
     fg = new Frog();
 
     // initializing 10 pieces of food
@@ -22,7 +23,9 @@ function draw() {
     for (var i = 0; i < feed.length; i++) {
         feed[i].display();
     }
+    text("food: " + feed.length, 10, 25);
 }
+
 
 function mousePressed() {
     fg.eat();
