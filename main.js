@@ -23,7 +23,7 @@ function draw() {
     for (var i = 0; i < feed.length; i++) {
         feed[i].display();
     }
-    text("food: " + feed.length, 10, 25);
+    text("food: " + frog.length, 10, 25);
 }
 
 
