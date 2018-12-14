@@ -23,7 +23,7 @@ function draw() {
     for (var i = 0; i < feed.length; i++) {
         feed[i].display();
     }
-    text("food: " + frog.length, 10, 25);
+    text("food: " + feed.length, 10, 25);
 }
 
 
@@ -93,10 +93,10 @@ function Frog() {
         ellipse(x - 20, y + 30, 10, 10);
 
         //eyeRight
-        if(mouseIsPressed){
+        if (mouseIsPressed) {
             fill('#00FFFF');
             ellipse(x + 60, y - 26, 95, 104);
-        } else{
+        } else {
             fill('#FF0000');
             ellipse(x + 60, y - 26, 95, 104);
         }
@@ -106,10 +106,10 @@ function Frog() {
         ellipse(x + 42, y - 26, 50, 50);
 
         //eyeLeft
-        if(mouseIsPressed){
+        if (mouseIsPressed) {
             fill('#00FFFF');
             ellipse(x - 60, y - 26, 95, 104);
-        } else{
+        } else {
             fill('#FF0000');
             ellipse(x - 60, y - 26, 95, 104);
         }
@@ -119,9 +119,9 @@ function Frog() {
         ellipse(x - 42, y - 26, 50, 50);
 
         //tongue
-        if(mouseIsPressed){
-        fill('#EE3E36');
-        arc(x, y + 80, 50, 100, 0, PI + QUARTER_PI, CHORD);
+        if (mouseIsPressed) {
+            fill('#EE3E36');
+            arc(x, y + 80, 50, 100, 0, PI + QUARTER_PI, CHORD);
         }
     };
 }
